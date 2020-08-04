@@ -86,7 +86,7 @@
             <p style="padding-left: 0">ECharts 之前提供下载的矢量地图数据来自第三方，由于部分数据不符合国家《测绘法》规定，目前暂时停止下载服务。</p>
             <p style="padding-left: 0">建议大家使用以百度地图为底图的形式，参考实例：<a href="http://echarts.baidu.com/demo.html#map-polygon">http://echarts.baidu.com/demo.html#map-polygon</a></p>
         </div>
-        <!--div class="row">
+        <div class="row">
             <div id="configuration" class="col-sm-8">
                 <section id="range">
                     <h3>范围<span>  range</span></h3>
@@ -634,24 +634,24 @@
         });
     }
 
-    // //
-    // function search(obj) {
+    //
+    function search(obj) {
 
-    //     var option = obj[obj.options.selectedIndex];
-    //     var arrTemp = option.value.split('|');
+        var option = obj[obj.options.selectedIndex];
+        var arrTemp = option.value.split('|');
 
-    //     var level = arrTemp[0];//行政级别
-    //     citycode = arrTemp[1];// 城市编码
-    //     var keyword = option.text; //关键字
+        var level = arrTemp[0];//行政级别
+        citycode = arrTemp[1];// 城市编码
+        var keyword = option.text; //关键字
 
-    //     district.setLevel(level); //行政区级别
-    //     //行政区查询
-    //     district.search(keyword, function(status, result){
-    //         getData(result);
-    //     });
-    // }
+        district.setLevel(level); //行政区级别
+        //行政区查询
+        district.search(keyword, function(status, result){
+            getData(result);
+        });
+    }
 
-    </script-->
+    </script>
 
 </body>
 <body>
